@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --cor-destaque: #5f8fdc;
+    --cor-fundo: #f5f5dc;
+    --cor-clara: #b3cef6;
+    --cor-texto: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: var(--cor-fundo);
+    height: 100vh;
+    flex-direction: column;
+    color: var(--cor-texto);
+}
+
+.container {
+    display: flex;
+    width: 65rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--cor-destaque);
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#entrada-de-texto {
+    display: flex;
+    height: 12rem;
+    padding: 1.4rem 2.5rem;
+    align-items: flex-start;
+    border-radius: 0.625rem;
+    background: #fff;
+    font-size: 2rem;
+    width: 100%;
+    border: 2px solid var(--cor-clara);
+}
+
+#entrada-de-texto::placeholder {
+    color: #8aaee0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#botao-palavrachave {
+    padding: 1.25rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: var(--cor-destaque);
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#resultado-palavrachave {
+    border-radius: 0.625rem;
+    color: var(--cor-destaque);
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+    border: 2px solid var(--cor-clara);
+}
